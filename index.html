@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form - Iscriviti</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <form action="index.html" method="POST">
+
+            <h1>Iscriviti a Startae14.xyz</h1>
+            <fieldset>
+                <legend><span class="number">1</span>Informazioni</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_mail">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="user_password">
+
+                <label for="user_bio">Biografia:</label>
+                <textarea id="bio" name="user_bio"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span>Corso</legend>
+                <label for="corsi">Scegli:</label>
+                <select id="corsi" name="user_corsi">
+                    <optgroup label="Web Design">
+                        <option value="primo_logo">Crea il tuo primo logo</option>
+                        <option value="html_css_1">HTML e CSS: Basi</option>
+                        <option value="css_avanzato">CSS avanzato</option>
+                        <option value="user_interface">User Interface</option>
+                    </optgroup>
+                    <optgroup label="Strategia">
+                        <option value="lean_startup">Introduzione al lean startup</option>
+                        <option value="business_model">Crea il tuo business model</option>             
+                        <option value="strategie_monetizzazione">Strategie di monetizzazione</option>
+                    </optgroup>
+                    <optgroup label="Programmazione">
+                        <option value="ruby_rails">Ruby on rails</option>
+                        <option value="php">PHP</option>
+                        <option value="javascript">Javascript</option>
+                    </optgroup>
+                </select>
+                <label>Vuoi ricevere la newsletter?</label>
+                
+                <input type="radio" id="si_news" value="si_news" name="newsletter">
+                <label for="si_news" class="news">Si</label>
+                <br>
+                <input type="radio" id="no_news" value="no_news" name="newsletter">
+                <label for="no_news" class="news">No</label>
+
+                <label>Interessi:</label>
+                <input type="checkbox" id="web_design" name="web_design">
+                <label for="web_design" class="news">Web Design</label>
+                <br>
+                <input type="checkbox" id="strategia" name="strategia">
+                <label for="strategia" class="news">Strategia</label>
+                <br>
+                <input type="checkbox" id="programmazione" name="programmazione">
+                <label for="programmazione" class="news">Programmazione</label>
+                <br>
+                <input type="checkbox" id="marketing" name="marketing">
+                <label for="marketing" class="news">Marketing</label>                
+            </fieldset>
+            <button type="submit">Iscriviti</button>
+        </form>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
